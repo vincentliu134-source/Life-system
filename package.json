@@ -1,0 +1,30 @@
+{
+  "name": "personal-six-dimension-ai-os",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "import:xmind": "node scripts/import-xmind.cjs",
+    "test:lan": "node scripts/lan-test.cjs",
+    "dev": "next dev",
+    "build:mobile": "vite build --config offline/vite.config.ts && node scripts/build-mobile.cjs",
+    "preview:mobile": "vite preview --config offline/vite.config.ts --host 0.0.0.0",
+    "build": "next build",
+    "start": "next start",
+    "lint": "npm run typecheck",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/regression.cjs && node scripts/ai-regression.cjs && node scripts/workflow-regression.cjs && node scripts/simple-system-regression.cjs && node scripts/workspace-regression.cjs && node scripts/daily-review-regression.cjs && node scripts/attention-regression.cjs && node scripts/habit-calendar-regression.cjs && node scripts/mobile-build-regression.cjs"
+  },
+  "dependencies": {
+    "next": "^15.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "undici": "^7.30.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "typescript": "^5.8.3",
+    "vite": "^7.3.7"
+  }
+}

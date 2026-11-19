@@ -1,0 +1,13 @@
+{
+  "name": "人生六维 · 手机版",
+  "short_name": "人生六维",
+  "description": "本机保存的个人行动与复盘系统",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f8f4",
+  "theme_color": "#f7f8f4",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
